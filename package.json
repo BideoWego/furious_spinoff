@@ -1,0 +1,20 @@
+{
+  "name": "furious_spinoff",
+  "version": "1.0.0",
+  "description": "Creates random Fast and Furious movie spin-off titles",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run jasmine spec/",
+    "jasmine": "node_modules/jasmine-node/bin/jasmine-node",
+    "console": "node repl.js",
+    "c": "node repl.js"
+  },
+  "author": "bideowego@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^4.1.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
