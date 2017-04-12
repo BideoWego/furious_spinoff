@@ -1,6 +1,6 @@
 {
   "name": "furious_spinoff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates random Fast and Furious movie spin-off titles",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,11 @@
     "c": "node repl.js"
   },
   "author": "bideowego@gmail.com",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BideoWego/furious_spinoff"
+  },
+  "license": "MIT",
   "dependencies": {
     "faker": "^4.1.0"
   },
