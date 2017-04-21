@@ -1,44 +1,44 @@
-var faker = require('faker');
+const faker = require('faker');
+const subjects = {
+  company: [
+    'bsAdjective',
+    'bsBuzz',
+    'bsNoun'
+  ],
+  hacker: [
+    'adjective',
+    'noun',
+    'verb',
+    'ingverb',
+    'phrase'
+  ],
+  random: [
+    'word'
+  ]
+};
 
 
 module.exports = () => {
 
-
-  var subjects = {
-    company: [
-      'bsAdjective',
-      'bsBuzz',
-      'bsNoun'
-    ],
-    hacker: [
-      'adjective',
-      'noun',
-      'verb',
-      'ingverb',
-      'phrase'
-    ],
-    random: [
-      'word'
-    ]
-  };
-
-
-  var keys = Object.keys(subjects);
-  var index = Math.floor(Math.random() * keys.length * Date.now());
-  var key = keys[index % keys.length];
-  var subject = subjects[key];
+  let keys = Object.keys(subjects);
+  let index = Math.floor(Math.random() * keys.length * Date.now());
+  let key = keys[index % keys.length];
+  let subject = subjects[key];
   var action = subject[index % subject.length];
   subject = key;
 
 
-  var temp = faker[subject][action]();
-  var w = [];
+  let temp = faker[subject][action]();
+  let w = [];
+
   temp.split(' ').forEach((word) => {
     var cap = word[0].toUpperCase() + word.substr(1);
     w.push(cap);
   });
+
   w = w.join(' ');
-  var sentences = [
+
+  const sentences = [
     `The ${ w } and the Furious`,
     `The Fast and the ${ w }`,
     `2 ${ w } 2 Furious`,
@@ -55,9 +55,9 @@ module.exports = () => {
     `Furious ${ w }`,
     `The ${ w } of the Furious`
   ];
-  var index = Math.floor(Math.random() * sentences.length * Date.now());
-  var title = sentences[index % sentences.length];
-
+  
+  index = Math.floor(Math.random() * sentences.length * Date.now());
+  let title = sentences[index % sentences.length];
 
   return title;
 };
