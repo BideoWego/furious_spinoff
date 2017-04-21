@@ -1,6 +1,6 @@
 {
   "name": "furious_spinoff",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Creates random Fast and Furious movie spin-off titles",
   "main": "index.js",
   "scripts": {
