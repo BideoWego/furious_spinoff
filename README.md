@@ -1,4 +1,4 @@
-furious_spinoff
+furious_spinoff 
 ===============
 
 Creates random Fast and Furious movie spin-off titles.
@@ -7,6 +7,8 @@ by [Bideo Wego](https://github.com/BideoWego)
 
 
 ## Getting Started
+
+Install with [NPM](https://www.npmjs.com/package/furious_spinoff)
 
 ```bash
 $ npm install furious_spinoff
